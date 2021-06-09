@@ -12,16 +12,19 @@ import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { LiveFormDialogComponent } from './views/home/live-form-dialog/live-form-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LiveListComponent,
-    LocalDateTimePipe
+    LocalDateTimePipe,
+    LiveFormDialogComponent
   ],
   imports: [
     HttpClientModule,
@@ -35,6 +38,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatTabsModule,
     MatCardModule,
     MatChipsModule,
+    MatDialogModule
   ],
   providers: [
     LocalDateTimePipe
