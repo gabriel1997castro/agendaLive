@@ -32,7 +32,9 @@ import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
     MatTabsModule,
     MatCardModule,
   ],
-  providers: [],
+  providers: [
+    LocalDateTimePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

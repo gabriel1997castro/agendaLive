@@ -4,11 +4,11 @@
       <ng-container *ngFor="let live of livesNext" style="margin: 0.5%;">
 
         <mat-card class="mat-card-live"
-          fxFlex="0 1 calc(33.3%-11px)"
-          fxFlex.lt-md="0 1 calc(50%-11px)"
+          fxFlex="0 1 calc(33.3% - 11px)"
+          fxFlex.lt-md="0 1 calc(50% - 11px)"
           fxFlex.lt-sm="100%"
         >
-          <mat-card-title mat-card-title-live>
+          <mat-card-title class="mat-card-title-live">
             <div class="row">
               <p>
                 <span style="font-size: 0.9rem;" fxFlex="70" fxLayoutAlign="start center">{{live.liveName}}</span>
@@ -22,7 +22,7 @@
           </mat-card-title>
           <mat-card-content fxLayoutAlign="center center">
             <div>
-              <iframe width="560" height="315" [src]="live.urlSafe" frameborder="0" allow="accelerometer; autoplay; encrypt-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" [src]="live.urlSafe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </mat-card-content>
         </mat-card>
@@ -39,12 +39,12 @@
           fxFlex.lt-md="0 1 calc(50%-11px)"
           fxFlex.lt-sm="100%"
         >
-          <mat-card-title mat-card-title-live>
+          <mat-card-title class="mat-card-title-live">
             <div class="row">
               <p>
                 <span style="font-size: 0.9rem;" fxFlex="70" fxLayoutAlign="start center">{{live.liveName}}</span>
                 <span fxFlex></span>
-                <span style="font-size: 0.7rem;" fxFlex="25" fxLayoutAlign="end center">{{live.liveDate}}</span>
+                <span style="font-size: 0.7rem;" fxFlex="25" fxLayoutAlign="end center">{{live.liveDate | localDateTime}}</span>
               </p>
               <p style="font-size: 0.7rem;">
                 Canal: <span>{{live.channelName}}</span>
@@ -53,7 +53,7 @@
           </mat-card-title>
           <mat-card-content fxLayoutAlign="center center">
             <div>
-              <iframe width="560" height="315" [src]="live.urlSafe" frameborder="0" allow="accelerometer; autoplay; encrypt-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" [src]="live.urlSafe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </mat-card-content>
         </mat-card>
