@@ -4,15 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './views/home/home.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { LiveListComponent } from './views/home/live-list/live-list.component';
-import { MatTabsModule } from '@angular/material/tabs';
-import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import { LiveListComponent } from './views/home/live-list/live-list.component';
 import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,11 @@ import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    FlexLayoutModule,
     MatButtonModule,
     MatTabsModule,
     MatCardModule,
+    MatChipsModule,
   ],
   providers: [
     LocalDateTimePipe
