@@ -17,6 +17,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { LiveFormDialogComponent } from './views/home/live-form-dialog/live-form-dialog.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,11 @@ import { LiveFormDialogComponent } from './views/home/live-form-dialog/live-form
     MatTabsModule,
     MatCardModule,
     MatChipsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule,
+    MatNativeDateModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     LocalDateTimePipe
